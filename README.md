@@ -1,1 +1,1 @@
-# https-github.com-yeong-jpg-WALab_Winter2018
+# WALab_Winter2018
