@@ -36,7 +36,7 @@ public class StepBManager {
 				break;
 			case 2:
 				B2_ConvertDegree b2 = new B2_ConvertDegree();
-				b2.printArea();
+				b2.printDegree();
 				break;
 			case 3:
 				B3_CheckSquare b3 = new B3_CheckSquare();
@@ -48,23 +48,23 @@ public class StepBManager {
 				break;
 			case 5:
 				B5_CalDate b5 = new B5_CalDate();
-				b5.printArea();
+				b5.printDate();
 				break;
 			case 6:
 				B6_CalScore b6 = new B6_CalScore();
-				b6.printArea();
+				b6.printScore();
 				break;
 			case 7:
 				B7_TransTime b7 = new B7_TransTime();
-				b7.printArea();
+				b7.printTime();
 				break;
 			case 8:
 				B8_VarCondition b8 = new B8_VarCondition();
-				b8.printArea();
+				b8.printConditional();
 				break;
 			case 9:
 				B9_CheckObesity b9 = new B9_CheckObesity();
-				b9.printArea();
+				b9.printObesity();
 				break;
 			
 			}
