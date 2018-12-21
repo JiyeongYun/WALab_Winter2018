@@ -23,26 +23,32 @@ public class StepAManager {
 			case 1:
 				A1_YearToAge a1 = new A1_YearToAge();
 				a1.printAge();
+				break;
 			case 2:
 				A2_ConvertDegree a2 = new A2_ConvertDegree();
 				a2.printDegree();
+				break;
 			case 3:
 				A3_RectArea a3 = new A3_RectArea();
 				a3.printArea();
+				break;
 			case 4:
 				A4_PyungArea a4 = new A4_PyungArea();
 				a4.printArea();
+				break;
 			case 5:
 				A5_DayToSecond a5 = new A5_DayToSecond();
 				a5.printSeconds();
+				break;
 			case 6:
 				A6_TotalAndAvg a6 = new A6_TotalAndAvg();
 				a6.printResult();
+				break;
 			case 7:
 				A7_GigaToByte a7 = new A7_GigaToByte();
 				a7.printResult();
-			case 0:
-				System.exit(0);
+				break;
+
 			}
 		}
 
