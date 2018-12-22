@@ -24,7 +24,7 @@ public class D10 {
 		}
 		System.out.println("");
 	}
-
+  
 	/** °© ÀÔ·Â **/
 	void input() {
 		Scanner sc = new Scanner(System.in);

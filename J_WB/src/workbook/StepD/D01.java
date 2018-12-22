@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class D01 {
 	private int number;
 	private int totalsum;
-	private int i;
 
 	/** 생성자 **/
 	public D01() {
@@ -27,7 +26,7 @@ public class D01 {
 	/** 값 계산 **/
 	int getTotal() {
 		totalsum = 0;
-		for (i = 1; i <= number; i++) {
+		for (int i = 1; i <= number; i++) {
 			totalsum += i;
 		}
 		return totalsum;

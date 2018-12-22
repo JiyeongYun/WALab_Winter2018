@@ -8,7 +8,7 @@ public class D09 {
 	/** 생성자 **/
 	public D09() {
 		input();
-	}
+	} 
 
 	/** 값 출력 **/
 	public void printGugudan() {

@@ -9,7 +9,7 @@ public class D07 {
 	private int x_end;
 	private int x;
 	private int y;
-
+ 
 	/** »ı¼ºÀÚ **/
 	public D07() {
 		input();

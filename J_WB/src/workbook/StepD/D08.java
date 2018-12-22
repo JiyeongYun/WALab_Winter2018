@@ -36,7 +36,7 @@ public class D08 {
 		x_begin = sc.nextInt();
 		x_end = sc.nextInt();
 	}
-
+ 
 	/** °ª °è»ê **/
 	int getY(int x) {
 		y = (a * x * x) + (b * x) + c;

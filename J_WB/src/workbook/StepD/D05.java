@@ -10,7 +10,7 @@ public class D05 {
 	private int count3 = 0;
 	private int count4 = 0;
 	private int count5 = 0;
-
+ 
 	/** »ı¼ºÀÚ **/
 	public D05() {
 		input();

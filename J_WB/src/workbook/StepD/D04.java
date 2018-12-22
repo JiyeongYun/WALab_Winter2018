@@ -7,7 +7,6 @@ public class D04 {
 	private int count_young;
 	private int birth_year;
 	private int age;
-	private int i;
 
 	/** 생성자 **/
 	public D04() {
@@ -27,7 +26,7 @@ public class D04 {
 		System.out.print("가족이 몇 명인지 입력하세요: ");
 		count_all = sc.nextInt();
 
-		for (i = 0; i < count_all; i++) {
+		for (int i = 0; i < count_all; i++) {
 			System.out.print("태어난 년도를 입력하세요: ");
 			birth_year = sc.nextInt();
 			setYoung();

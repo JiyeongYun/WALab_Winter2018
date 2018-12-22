@@ -17,7 +17,7 @@ public class D03 {
 	public void printResult() {
 		System.out.println("입력한" + count + " 개의 숫자들의 총합계는 " + totalsum + " 이고, 평균 값은 " + getAvg() + " 입니다.");
 	}
-
+ 
 	/** 갑 입력 **/
 	void input() {
 		Scanner sc = new Scanner(System.in);

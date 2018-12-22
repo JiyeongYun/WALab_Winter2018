@@ -6,7 +6,7 @@ public class D02 {
 	private int number;
 	private int max_num;
 	private int min_num;
-
+ 
 	/** »ı¼ºÀÚ **/
 	public D02() {
 		input();

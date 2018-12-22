@@ -20,10 +20,12 @@ public class StepEManager {
 				break;
 			switch (menu) {
 			case 1:
-
+				E01 e1 = new E01();
+				e1.printSquare();
 				break;
 			case 2:
-
+				E02 e2 = new E02();
+				e2.printTriangle();
 				break;
 			case 3:
 

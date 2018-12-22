@@ -9,7 +9,6 @@ public class D06 {
 	private int count2 = 0;
 	private int count3 = 0;
 	private int count4 = 0;
-	private int i;
 
 	/** 생성자 **/
 	public D06() {
@@ -27,7 +26,7 @@ public class D06 {
 	/** 갑 입력 **/
 	void input() {
 		Scanner sc = new Scanner(System.in);
-		for (i = 0; i < 10; i++) {
+		for (int i = 0; i < 10; i++) {
 			System.out.print("아파트의 분양 면적(제곱미터)을 입력하세요: ");
 			m2_area = sc.nextDouble();
 			System.out.printf("--> 아파트의 평형은 %.1f 입니다.\n", getArea());
