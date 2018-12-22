@@ -14,13 +14,19 @@ public class E02 {
 	/** °ª Ãâ·Â **/
 	public void printTriangle() {
 		for (int i = 1; i <= height; i++) {
-			for (int j = 1; j <= height; i++) {
-				if (i <= height - i) {
+
+			for (int j = 0; j < blank; j++) {
+				System.out.print(" ");
+			}
+
+			for (int j = 1; j <= height; j++) {
+				if (j <= height - i) {
 					System.out.print(" ");
 				} else {
 					System.out.print("*");
 				}
 			}
+
 			System.out.println();
 		}
 	}

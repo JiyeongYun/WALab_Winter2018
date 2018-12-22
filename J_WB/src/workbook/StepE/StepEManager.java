@@ -28,16 +28,20 @@ public class StepEManager {
 				e2.printTriangle();
 				break;
 			case 3:
-
+				E03 e3 = new E03();
+				e3.printTriangle();
 				break;
 			case 4:
-
+				E04 e4 = new E04();
+				e4.printGugu();
 				break;
 			case 5:
-
+				E05 e5 = new E05();
+				e5.printGugu();
 				break;
 			case 6:
-
+				E06 e6 = new E06();
+				e6.printDimen();
 				break;
 			}
 		}

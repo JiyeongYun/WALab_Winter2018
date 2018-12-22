@@ -10,7 +10,7 @@ public class E01 {
 	/** 생성자 **/
 	public E01() {
 		input();
-	}
+	} 
 
 	/** 값 출력 **/
 	public void printSquare() {
