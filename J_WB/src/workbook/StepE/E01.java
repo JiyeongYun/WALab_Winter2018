@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class E01 {
 	private int length;
-	private int i;
-	private int j;
 	
 	/** 생성자 **/
 	public E01() {
@@ -14,8 +12,8 @@ public class E01 {
 
 	/** 값 출력 **/
 	public void printSquare() {
-		for(i = 0; i<length; i++) {
-			for(j = 0; j<length; j++) {
+		for(int i = 0; i<length; i++) {
+			for(int j = 0; j<length; j++) {
 				System.out.print("# ");
 			}
 			System.out.println();
