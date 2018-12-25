@@ -25,22 +25,25 @@ public class StepGManager {
 				g1.printResult();
 				break;
 			case 2:
-
+				G02 g2 = new G02();
+				g2.printDegree();
 				break;
 			case 3:
-
+				G03 g3 = new G03();
+				g3.printGrade();
 				break;
 			case 4:
-
+				G04 g4 = new G04();
 				break;
 			case 5:
-
+				G05 g5 = new G05();
 				break;
 			case 6:
-
+				G06 g6 = new G06();
 				break;
 			case 7:
-
+				G07 g7 = new G07();
+				g7.printResult();
 				break;
 			}
 		}
