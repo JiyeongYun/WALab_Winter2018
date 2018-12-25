@@ -23,13 +23,15 @@ public class StepHManager {
 				break;
 			switch (menu) {
 			case 1:
-				
+				H01 h1 = new H01();
+				h1.printResult();
 				break;
 			case 2:
-				
+				H02 h2 = new H02();
 				break;
 			case 3:
-				
+				H03 h3 = new H03();
+				h3.printLotto();
 				break;
 			case 4:
 				
