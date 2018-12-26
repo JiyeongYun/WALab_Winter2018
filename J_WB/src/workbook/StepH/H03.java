@@ -20,7 +20,7 @@ public class H03 {
 		}
 		System.out.println(" 입니다.\n");
 
-		System.out.println("일치하는 로도 번호는 " + getMatch() + "개 입니다.");
+		System.out.println("일치하는 로또 번호는 " + getMatch() + "개 입니다.");
 	}
 
 	/** 갑 입력 **/
