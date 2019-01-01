@@ -3,6 +3,7 @@ package workbook.StepF;
 import java.util.Scanner;
 
 public class F03 {
+	private String subject[] = { "국어", "영어", "수학" };
 	private int[][] jumsum = new int[5][3];
 	private int[] sum = { 0, 0, 0 };
 	private double[] average = { 0, 0, 0 };
@@ -19,9 +20,9 @@ public class F03 {
 	public void printScore() {
 		setSum();
 		setAvg();
-		System.out.printf("국어의 총점은 %d이고, 평균은 %.1f 입니다.\n", sum[0], average[0]);
-		System.out.printf("영어의 총점은 %d이고, 평균은 %.1f 입니다.\n", sum[1], average[1]);
-		System.out.printf("수학의 총점은 %d이고, 평균은 %.1f 입니다.\n", sum[2], average[2]);
+		for (int i = 0; i < subject.length; i++) {
+			System.out.printf("%s의 총점은 %d이고, 평균은 %.1f 입니다.\n", subject[i], sum[i], average[i]);
+		}
 	}
 
 	/** 갑 입력 **/
@@ -29,18 +30,18 @@ public class F03 {
 		Scanner sc = new Scanner(System.in);
 		for (int i = 0; i < jumsum.length; i++) {
 			System.out.print(i + 1 + "번 학생 국어, 영어, 수학 점수를 입력하세요: ");
-			jumsum[i][0] = sc.nextInt();
-			jumsum[i][1] = sc.nextInt();
-			jumsum[i][2] = sc.nextInt();
+			for(int j = 0; j< jumsum[0].length;j++) {
+				jumsum[i][j] = sc.nextInt();
+			}
 		}
 	}
 
 	/** 값 계산 **/
 	void setSum() {
 		for (int i = 0; i < jumsum.length; i++) {
-			sum[0] += jumsum[i][0]; // 국어
-			sum[1] += jumsum[i][1]; // 영어
-			sum[2] += jumsum[i][2]; // 수학
+			for(int j = 0; j< jumsum[0].length;j++) {
+				sum[j] += jumsum[i][j];
+			}
 		}
 	}
 
