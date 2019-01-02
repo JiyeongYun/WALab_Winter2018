@@ -6,12 +6,8 @@ public class G01 {
 	private int age[] = new int[100];
 	private int birth_year;
 	private int count_person;
-	private int count_baby = 0;
-	private int count_child = 0;
-	private int count_youth = 0;
-	private int count_young = 0;
-	private int count_adult = 0;
-	private int count_old = 0;
+	private String person[] = { "유아", "어린이", "청소년", "청년", "중년", "노년" };
+	private int count[] = { 0, 0, 0, 0, 0, 0 };
 
 	/** 생성자 **/
 	public G01() {
@@ -23,12 +19,14 @@ public class G01 {
 		for (int i = 0; i < count_person; i++) {
 			System.out.println((i + 1) + "번재 사람의 나이는 " + age[i] + " 입니다.");
 		}
-		System.out.println("유아는 " + count_baby + "명 입니다.");
-		System.out.println("어린이는 " + count_child + "명 입니다.");
-		System.out.println("청소년은 " + count_youth + "명 입니다.");
-		System.out.println("청년은 " + count_young + "명 입니다.");
-		System.out.println("중년은 " + count_adult + "명 입니다.");
-		System.out.println("노년은 " + count_old + "명 입니다.");
+		for (int i = 0; i < count.length; i++) {
+			if (i < 2) {
+				System.out.println(person[i] + "는 " + count[i] + "명 입니다.");
+			} else {
+				System.out.println(person[i] + "은 " + count[i] + "명 입니다.");
+			}
+
+		}
 	}
 
 	/** 갑 입력 **/
@@ -57,17 +55,17 @@ public class G01 {
 	/** 연령대 체크 **/
 	void setAge(int age) {
 		if (age < 7) {
-			count_baby++;
+			count[0]++;
 		} else if (age >= 7 && age < 13) {
-			count_child++;
+			count[1]++;
 		} else if (age >= 13 && age < 20) {
-			count_youth++;
+			count[2]++;
 		} else if (age >= 20 && age < 30) {
-			count_young++;
+			count[3]++;
 		} else if (age > 30 && age < 60) {
-			count_adult++;
+			count[4]++;
 		} else if (age >= 60) {
-			count_old++;
+			count[5]++;
 		}
 	}
 
