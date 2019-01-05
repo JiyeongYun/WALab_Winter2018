@@ -48,25 +48,23 @@ public class G01 {
 	/** 값 계산 **/
 	int getAge(int year) {
 		int age = 2012 - year + 1;
-		setAge(age);
+		count[getAgeSection(age)]++;
 		return age;
 	}
 
-	/** 연령대 체크 **/
-	void setAge(int age) {
-		if (age < 7) {
-			count[0]++;
-		} else if (age >= 7 && age < 13) {
-			count[1]++;
-		} else if (age >= 13 && age < 20) {
-			count[2]++;
-		} else if (age >= 20 && age < 30) {
-			count[3]++;
-		} else if (age > 30 && age < 60) {
-			count[4]++;
-		} else if (age >= 60) {
-			count[5]++;
-		}
+	private int getAgeSection(int age) {
+		if (age < 7)
+			return 0;
+		else if (age >= 7 && age < 13)
+			return 1;
+		else if (age >= 13 && age < 20)
+			return 2;
+		else if (age >= 20 && age < 30)
+			return 3;
+		else if (age > 30 && age < 60)
+			return 4;
+		else
+			return 5;
 	}
 
 }
