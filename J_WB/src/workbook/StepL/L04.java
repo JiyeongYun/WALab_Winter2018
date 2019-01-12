@@ -118,7 +118,7 @@ public class L04 {
 		for (int i = 0; i < stdArr.size(); i++) {
 			Student temp = stdArr.get(i);
 			if(temp.idx == n) {
-				stdArr.get(n - 1).modifyInfo();
+				stdArr.get(i).modifyInfo();
 				System.out.print("수정되었습니다.");		
 				break;
 			}
