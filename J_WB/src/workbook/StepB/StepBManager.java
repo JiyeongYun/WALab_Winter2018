@@ -2,14 +2,6 @@ package workbook.StepB;
 
 import java.util.Scanner;
 
-import workbook.StepA.A1_YearToAge;
-import workbook.StepA.A2_ConvertDegree;
-import workbook.StepA.A3_RectArea;
-import workbook.StepA.A4_PyungArea;
-import workbook.StepA.A5_DayToSecond;
-import workbook.StepA.A6_TotalAndAvg;
-import workbook.StepA.A7_GigaToByte;
-
 public class StepBManager {
 	public StepBManager() {
 		int menu;
