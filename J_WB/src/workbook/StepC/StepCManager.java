@@ -2,8 +2,6 @@ package workbook.StepC;
 
 import java.util.Scanner;
 
-import workbook.StepB.B1_CheckTeen;
-
 public class StepCManager {
 	public StepCManager() {
 		int menu;
